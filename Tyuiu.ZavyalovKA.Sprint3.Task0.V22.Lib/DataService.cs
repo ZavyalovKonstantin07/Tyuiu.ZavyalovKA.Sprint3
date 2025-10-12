@@ -9,7 +9,7 @@ namespace Tyuiu.ZavyalovKA.Sprint3.Task0.V22.Lib
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                MultiplySeries *= ((Math.Pow(value, i) + 4) * Math.Cos(value));
+                MultiplySeries += ((Math.Pow(value, i) + 4) * Math.Cos(value));
             }
             return Math.Round(MultiplySeries, 3);
         }
