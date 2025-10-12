@@ -1,19 +1,18 @@
-﻿using Tyuiu.ZavyalovKA.Sprint3.Task1.V18.Lib;
-namespace Tyuiu.ZavyalovKA.Sprint3.Task1.V18.Test
+﻿using tyuiu.cources.programming.interfaces.Sprint3; 
+namespace Tyuiu.ZavyalovKA.Sprint3.Task1.V18.Lib
 {
-    [TestClass]
-    public sealed class DataServiceTest
+    public class DataService : ISprint3Task1V18
     {
-        [TestMethod]
-        public void ValidGetSumSeries()
+        public double GetSumSeries(int startValue, int stopValue)
         {
-            DataService ds = new DataService();
-
-            int startValue = 1;
-            int stopValue = 15;
-            var res = ds.GetSumSeries(startValue, stopValue);
-            double wait = 1.121;
-            Assert.AreEqual(wait, res);
+            double SumSeries = 0;
+            while (startValue <= stopValue)
+            {
+                SumSeries += (Math.Sin(startValue) * Math.Pow(0.25, 2));
+                startValue++;
+            }
+            return Math.Round(SumSeries, 3);
         }
     }
 }
+

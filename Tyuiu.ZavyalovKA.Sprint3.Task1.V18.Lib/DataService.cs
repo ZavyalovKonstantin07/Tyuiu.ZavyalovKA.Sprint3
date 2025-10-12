@@ -5,10 +5,10 @@ namespace Tyuiu.ZavyalovKA.Sprint3.Task1.V18.Lib
     {
         public double GetSumSeries(int startValue, int stopValue)
         {
-            double SumSeries = 1;
+            double SumSeries = 0;
             while (startValue <= stopValue)
             {
-                SumSeries += (Math.Sin(startValue) * Math.Pow(0.25, 2));
+                SumSeries += (Math.Sin(startValue) * Math.Pow(0.25, 2);
                 startValue++;
             }
             return Math.Round(SumSeries, 3);
