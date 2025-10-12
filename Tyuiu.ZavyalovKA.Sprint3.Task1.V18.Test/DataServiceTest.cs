@@ -1,4 +1,4 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3; 
+﻿using Tyuiu.ZavyalovKA.Sprint3.Task1.V18.Lib;
 namespace Tyuiu.ZavyalovKA.Sprint3.Task1.V18.Lib
 {
     public class DataService : ISprint3Task1V18
