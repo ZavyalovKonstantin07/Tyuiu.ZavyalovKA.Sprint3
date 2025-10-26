@@ -1,0 +1,21 @@
+﻿// See https://aka.ms/new-console-template for more information
+using Tyuiu.ZavyalovKA.Sprint3.Task5.V24.Lib;
+DataService ds = new DataService();
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
+Console.WriteLine("***************************************************************************");
+int x = 2;
+int startValue1 = 1;
+int stopValue1 = 3;
+int startValue2 = 1;
+int stopValue2 = 12;
+Console.WriteLine("Переменная X = " + x);
+Console.WriteLine("Старт шага первой суммы ряды = " + startValue1);
+Console.WriteLine("Конец шага первой суммы ряды = " + stopValue1);
+Console.WriteLine("Старт шага второй суммы ряды = " + startValue2);
+Console.WriteLine("Конец шага первой суммы ряды = " + stopValue2);
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("Сумма ряда = " + ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2));
+Console.ReadKey();
