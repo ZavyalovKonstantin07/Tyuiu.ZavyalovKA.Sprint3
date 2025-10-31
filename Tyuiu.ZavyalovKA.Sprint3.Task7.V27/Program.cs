@@ -1,12 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Tyuiu.ZavyalovKA.Sprint3.Task7.V27.Lib;
-
-namespace Tyuiu.ZavyalovKA.Sprint3.Task7.V27
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
             DataService ds = new DataService();
 
             Console.WriteLine("******************************");
