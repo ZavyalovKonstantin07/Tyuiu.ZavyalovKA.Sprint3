@@ -32,7 +32,7 @@ namespace Tyuiu.ZavyalovKA.Sprint3.Task7.V27
 
             for (int i = 0; i < len; i++)
             {
-                Console.WriteLine("|{0,5}     | {1,7:f2}  |", startValue + i, valueArray[i]);
+                Console.WriteLine("|{0,5}     | {1,7:f2}  |", startValue, valueArray[i]);
             }
 
             Console.WriteLine("+----------+----------+");

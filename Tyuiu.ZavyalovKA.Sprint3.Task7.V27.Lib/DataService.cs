@@ -30,5 +30,3 @@ namespace Tyuiu.ZavyalovKA.Sprint3.Task7.V27.Lib
         }
     }
 }
-
-
