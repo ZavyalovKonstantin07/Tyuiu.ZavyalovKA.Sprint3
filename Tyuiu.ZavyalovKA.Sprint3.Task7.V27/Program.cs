@@ -12,8 +12,10 @@ int stopValue = 5;
 Console.WriteLine("Старт шага = " + startValue);
 Console.WriteLine("Конец шага = " + stopValue);
 
-double[] valueArray = ds.GetMassFunction(startValue, stopValue);
-int len = valueArray.Length;
+int len = ds.GetMassFunction(startValue, stopValue).Length;
+double[] valueArray;
+valueArray = new double[len];
+valueArray = ds.GetMassFunction(startValue, stopValue);
 
 Console.WriteLine("******************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                *");
